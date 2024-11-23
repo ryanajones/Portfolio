@@ -1,0 +1,16 @@
+# macOS System Files
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Temporary files
+*.tmp
+*.temp
+
+# VSCode
+.vscode/
