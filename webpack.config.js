@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -45,9 +46,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
+    new ReactRefreshWebpackPlugin(),
   ],
   devServer: {
     static: "./dist",
+    hot: true,
     port: 3000,
     open: true,
   },
