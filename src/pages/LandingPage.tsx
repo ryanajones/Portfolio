@@ -1,6 +1,8 @@
-import styles from "./LandingPage.module.scss";
+import React from 'react';
 
-const LandingPage = () => {
+import styles from './LandingPage.module.scss';
+
+const LandingPage: React.FC = (): React.JSX.Element => {
   return (
     <div>
       <div className={styles.test}>landingPage</div>

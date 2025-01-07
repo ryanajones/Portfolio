@@ -7,5 +7,5 @@ dev-up-build:
 	docker compose up --build
 
 .PHONY: dev-down
-dev-up-build:
+dev-down:
 	docker compose down	
