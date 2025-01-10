@@ -12,7 +12,7 @@ export default [
   prettierConfig,
   {
     files: ['**/*.{ts,tsx}'],
-    ignores: ["*.d.ts"],
+      ignores: ['**/*.d.ts'],
     ...js.configs.recommended,
     languageOptions: {
       parser: tsParser,
